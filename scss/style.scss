@@ -1,0 +1,70 @@
+// import
+
+@import "extra/vars";
+
+// nesting
+
+/*reset*/
+
+*{
+    margin: $med-principal;
+    padding: 0;
+    box-sizing: border-box;}
+
+/*estilos de mi menu de navegacion*/
+header{
+    text-align: center;
+    .nav-color{
+        background-color: $color-menu;
+    }
+    nav ul{
+        list-style: none;
+    }
+    nav ul li{
+        display: inline-block;
+        a{
+            padding: $med-principal;
+            text-decoration: none;
+            color: black;
+            background-color: none;
+        }
+    }
+}
+
+/*body*/
+body{
+    background-color: $color-principal;
+}
+
+/*index.html*/
+.imagen-home{ 
+    background-image: url(../img/KINESIOLOGIA-fondo.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom 100% ;
+    text-align: center;
+    color: black;
+}
+
+.imagen-index{
+    grid-template-columns: auto;
+    column-gap: 3rem;
+    grid-template-rows: repeat(2, 50%);
+    text-align: center;
+    row-gap: 2rem;
+}
+
+/*quien-soy.html*/
+.quiensoy img{
+    float: left;
+    align-items: flex-end;
+}
+
+.img-quien-soy{
+    flex-direction: row;
+    display: flex;
+    clear: both;
+}
